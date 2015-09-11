@@ -51,6 +51,8 @@ BuildRequires:  readline-devel
 BuildRequires:  sharutils
 #BuildRequires:  gdb
 BuildRequires:  python
+BuildRequires:  gfx-rpi-libGLESv2, gfx-rpi-libEGL
+BuildRequires:  gfx-rpi-libGLESv2-devel, gfx-rpi-libEGL-devel
 BuildRequires:  pkgconfig(fontconfig)
 
 %if %{with X11}
