@@ -602,7 +602,9 @@ MAKEFLAGS=%{?_smp_mflags} \
 %endif
     -no-xinput2 \
     -qreal float \
-    -journald
+    -journald \
+    -qpa eglfs \
+    -device rasp-pi
 fi # config.status check
 
 make %{?_smp_mflags}
