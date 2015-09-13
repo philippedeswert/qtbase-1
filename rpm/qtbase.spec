@@ -604,8 +604,8 @@ MAKEFLAGS=%{?_smp_mflags} \
     -qreal float \
     -journald \
     -qpa eglfs \
-    -device rasp-pi 
-#    -device-option CROSS_COMPILE=/usr/bin/
+    -device rasp-pi \
+    -device-option CROSS_COMPILE=/usr/bin/
 fi # config.status check
 
 make %{?_smp_mflags}
