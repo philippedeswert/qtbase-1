@@ -544,6 +544,7 @@ if [ -f "./config.status" ]; then
     echo "config.status already exists, not running configure to save time";
 else
 export PKG_CONFIG_LIBDIR=/usr/lib/pkgconfig
+export PKG_CONFIG_SYSROOT_DIR=/
 MAKEFLAGS=%{?_smp_mflags} \
 ./configure --disable-static \
     -confirm-license \
@@ -603,6 +604,7 @@ MAKEFLAGS=%{?_smp_mflags} \
     -no-xcb \
 %endif
     -no-xinput2 \
+    -force-pkg-config \
     -no-mtdev \
     -qreal float \
     -qpa eglfs \
