@@ -542,6 +542,7 @@ touch .git
 if [ -f "./config.status" ]; then
     echo "config.status already exists, not running configure to save time";
 else
+export PKG_CONFIG_LIBDIR=/usr/lib/pkgconfig
 MAKEFLAGS=%{?_smp_mflags} \
 ./configure --disable-static \
     -confirm-license \
@@ -606,7 +607,6 @@ MAKEFLAGS=%{?_smp_mflags} \
     -qpa eglfs \
     -device rasp-pi \
     -device-option CROSS_COMPILE=/usr/bin/ \
-    -continue
 fi # config.status check
 
 make %{?_smp_mflags}
