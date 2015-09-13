@@ -54,6 +54,7 @@ BuildRequires:  python
 BuildRequires:  gfx-rpi-libGLESv2, gfx-rpi-libEGL
 BuildRequires:  gfx-rpi-libGLESv2-devel, gfx-rpi-libEGL-devel
 BuildRequires:  pkgconfig(fontconfig)
+BuildRequires:  mtdev-devel
 
 %if %{with X11}
 BuildRequires:  pkgconfig(ice)
