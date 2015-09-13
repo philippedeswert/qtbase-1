@@ -604,11 +604,12 @@ MAKEFLAGS=%{?_smp_mflags} \
     -no-xinput2 \
     -qreal float \
 #    -journald \
-    -qpa eglfs \
+#    -qpa eglfs \
     -device rasp-pi \
     -device-option CROSS_COMPILE=/usr/bin/ 
 fi # config.status check
 
+echo "configure over"
 make %{?_smp_mflags}
 
 
