@@ -603,8 +603,7 @@ MAKEFLAGS=%{?_smp_mflags} \
 %endif
     -no-xinput2 \
     -qreal float \
-#    -journald \
-#    -qpa eglfs \
+    -qpa eglfs \
     -device rasp-pi \
     -device-option CROSS_COMPILE=/usr/bin/ 
 fi # config.status check
