@@ -603,6 +603,7 @@ MAKEFLAGS=%{?_smp_mflags} \
     -no-xcb \
 %endif
     -no-xinput2 \
+    -no-mtdev \
     -qreal float \
     -qpa eglfs \
     -device rasp-pi \
