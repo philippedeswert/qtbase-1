@@ -96,6 +96,7 @@ static EGLNativeWindowType createDispmanxLayer(const QPoint &pos, const QSize &s
 #define ELEMENT_CHANGE_MASK_RESOURCE  (1<<4)
 #define ELEMENT_CHANGE_TRANSFORM      (1<<5)
 
+#if 0
 static void moveDispmanxLayer(EGLNativeWindowType window, const QPoint &pos)
 {
     EGL_DISPMANX_WINDOW_T *eglWindow = static_cast<EGL_DISPMANX_WINDOW_T *>(window);
@@ -126,6 +127,7 @@ static void moveDispmanxLayer(EGLNativeWindowType window, const QPoint &pos)
 
     vc_dispmanx_update_submit_sync(dispman_update);
 }
+#endif
 
 static void destroyDispmanxLayer(EGLNativeWindowType window)
 {
