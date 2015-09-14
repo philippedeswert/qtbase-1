@@ -30,7 +30,9 @@ HEADERS +=  $$PWD/qeglfsintegration.h \
 
 QMAKE_LFLAGS += $$QMAKE_LFLAGS_NOUNDEF
 
-INCLUDEPATH += $$PWD
+INCLUDEPATH += $$PWD \
+               /usr/include/interface/vcos/pthreads \
+               /usr/include/interface/vmcs_host/linux
 
 !isEmpty(EGLFS_PLATFORM_HOOKS_SOURCES) {
     HEADERS += $$EGLFS_PLATFORM_HOOKS_HEADERS
